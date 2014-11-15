@@ -20,7 +20,7 @@ public class Emetteur {
       DatagramPacket paquet = new DatagramPacket(data,data.length,
                                                  new InetSocketAddress("localhost",55678));
       s.send(paquet);
-      System.out.println("["+message+"] sent");
+      System.out.println("["+message+"] --sent");
     } catch(Exception ex) {
       ex.printStackTrace();
       System.exit(1);
